@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 2px solid black; */
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.img-logo,
+.img-logo img {
+  width: 30vw;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  width: 70vw;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content .note,
+.content .form,
+.content .login {
+  flex: 0.7;
+
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.content .note {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: flex-start;
+  /* align-items: center; */
+  flex: 1.7;
+}
+span {
+  font-style: italic;
+}
+
+.content .form {
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+  min-height: fit-content;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+.name,
+.contact,
+.passwords {
+  display: flex;
+  gap: 20vw;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+.label-input label {
+  padding-left: 5px;
+}
+
+.label-input input {
+  height: 30px;
+  border-radius: 10px;
+  width: 20vw;
+  border: 1px solid black;
+}
+
+.content .login {
+  flex: 1.7;
+}
