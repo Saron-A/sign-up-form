@@ -41,38 +41,23 @@
         </section>
         <section class="form">
           <h2>Let's do this!</h2>
-          <form action="#" method="post">
+          <form action="#" id="sign-up-form">
             <section class="name">
               <div class="label-input">
                 <label for="fname">FIRST NAME</label>
-                <input
-                  type="text"
-                  id="fname"
-                  name="firstname"
-                  pattern="[A-Z][a-z]+"
-                />
+                <input type="text" id="fname" name="fname" />
               </div>
 
               <div class="label-input">
                 <label for="lname">LAST NAME</label>
-                <input
-                  type="text"
-                  id="lname"
-                  name="lastname"
-                  pattern="[A-Z][a-z]+"
-                />
+                <input type="text" id="lname" name="lname" />
               </div>
             </section>
 
             <section class="contact">
               <div class="label-input">
                 <label for="mail">EMAIL </label>
-                <input
-                  type="email"
-                  id="mail"
-                  name="email"
-                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$"
-                />
+                <input type="email" id="mail" name="email" />
               </div>
 
               <div class="label-input">
@@ -84,24 +69,12 @@
             <section class="passwords">
               <div class="label-input">
                 <label for="newpass">PASSWORD </label>
-                <input
-                  type="password"
-                  id="newpass"
-                  name="password"
-                  minlength="8"
-                  maxlength="12"
-                  required
-                />
+                <input type="password" id="newpass" name="password" />
               </div>
 
               <div class="label-input">
                 <label for="confpass">CONFIRM PASSWORD </label>
-                <input
-                  type="password"
-                  id="confpass"
-                  name="confirmedpassword"
-                  required
-                />
+                <input type="password" id="confpass" name="confirmedpassword" />
               </div>
             </section>
           </form>
@@ -112,5 +85,6 @@
         </section>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
